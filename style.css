@@ -8,7 +8,7 @@
 body { 
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, black 80%, rgb(50, 50, 50), rgb(100, 100, 100), rgb(200, 200, 200)),
-        url(/background_image/New-Background.jpg) no-repeat center center;
+        url(./background_image/New-Background.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 400vh;
