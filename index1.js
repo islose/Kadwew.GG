@@ -124,3 +124,14 @@ gsap.from(".partner", {
     once: true,
   }
 });
+
+let images = document.querySelectorAll(".logo-partner img");
+let index = 0;
+
+function changeImage() {
+  gsap.to(images[index], { opacity: 0, diration: 1});
+  index = (index +1) % images.length;
+  gsap.to(images[index], { opacity: 1, duration: 1});
+}
+
+setInterval(changeImage, 3000);

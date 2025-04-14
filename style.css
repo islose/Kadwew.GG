@@ -414,22 +414,26 @@ body {
 
 .partner {
     text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
+    padding: 20px;
 }
 
-.logo-partner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+.h2-part {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
 }
 
 .logo-partner img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+}
+
+.logo-partner img.active {
+    opacity: 1;
 }
