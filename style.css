@@ -5,13 +5,12 @@
     box-sizing: border-box;
 }
 
-body { 
-    background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, black 80%, rgb(50, 50, 50), rgb(100, 100, 100), rgb(200, 200, 200)),
-        url(./background_image/New-Background.jpg) no-repeat center center;
+body {
+    background: url(./background_image/New-Background.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 400vh;
+    min-height: 500vh;
+    overflow-x: hidden;
     font-family: Helvetica, sans-serif;
 }
     
@@ -414,7 +413,7 @@ body {
 
 .partner {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 200px;
 }
 
 .h2-part {
@@ -429,11 +428,58 @@ body {
     margin: auto;
 }
 
+.logo-partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
 .logo-partner img {
     position: absolute;
     opacity: 0;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
-.logo-partner img.active {
-    opacity: 1;
+.app-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -150px;
+    height: 100vh;
+}
+
+.img-info {
+    flex: 0 0 600px;
+}
+
+.img-info img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.description {
+    flex: 1;
+    max-width: 500px;
+}
+
+.description h2 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.description p {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 70%);
+    font-weight: bold;
+    line-height: 1.6;
 }

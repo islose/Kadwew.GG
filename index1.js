@@ -49,7 +49,7 @@ gsap.from("#ytVid", {
   ease: "power2.out",
   scrollTrigger: {
       trigger: "#ytVid",
-      start: "top 95%",
+      start: "top 90%",
       end: "top 50%",
       once: true,
   }
@@ -64,7 +64,7 @@ gsap.from(".omenAmd", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".omenAmd",
-    start: "top 70%",
+    start: "top 90%",
     end: "top 50%",
     once: true,
   }
@@ -106,20 +106,33 @@ gsap.from(".feedBacks", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".feedBacks",
-    start: "top 85%",
+    start: "top 90%",
     end: "top 50%",
     once: true,
   }
 });
 
-gsap.from(".partner", {
+gsap.from(".h2-part", {
   opacity: 0,
   y: 200,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".partner",
-    start: "top 85%",
+    start: "top 90%",
+    end: "top 50%",
+    once: true,
+  }
+});
+
+gsap.from(".logo-partner", {
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".partner",
+    start: "top 90%",
     end: "top 50%",
     once: true,
   }
@@ -128,10 +141,25 @@ gsap.from(".partner", {
 let images = document.querySelectorAll(".logo-partner img");
 let index = 0;
 
+gsap.set(images[0], { opacity: 1});
+
 function changeImage() {
-  gsap.to(images[index], { opacity: 0, diration: 1});
+  gsap.to(images[index], { opacity: 0, duration: 2});
   index = (index +1) % images.length;
-  gsap.to(images[index], { opacity: 1, duration: 1});
+  gsap.to(images[index], { opacity: 1, duration: 2});
 }
 
 setInterval(changeImage, 3000);
+
+gsap.from(".app-info", {
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".app-info",
+    start: "top 50%",
+    end: "top 10%",
+    once: true,
+  }
+});
