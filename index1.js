@@ -119,8 +119,8 @@ gsap.from(".h2-part", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".partner",
-    start: "top 90%",
-    end: "top 50%",
+    start: "top 50%",
+    end: "top 10%",
     once: true,
   }
 });
@@ -132,8 +132,8 @@ gsap.from(".logo-partner", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".partner",
-    start: "top 90%",
-    end: "top 50%",
+    start: "top 50%",
+    end: "top 10%",
     once: true,
   }
 });
@@ -158,6 +158,19 @@ gsap.from(".app-info", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".app-info",
+    start: "top 50%",
+    end: "top 10%",
+    once: true,
+  }
+});
+
+gsap.from(".app-info-reverse", {
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".app-info-reverse",
     start: "top 50%",
     end: "top 10%",
     once: true,
