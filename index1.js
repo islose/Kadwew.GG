@@ -298,3 +298,4 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     }
   });
 });
+
