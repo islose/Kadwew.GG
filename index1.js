@@ -121,7 +121,7 @@ gsap.from(".feedBacks", {
 
 gsap.from(".h2-part", {
   opacity: 0,
-  y: 200,
+  y: 40,
   duration: 0.6,
   ease: "power2.out",
   scrollTrigger: {
@@ -134,7 +134,7 @@ gsap.from(".h2-part", {
 
 gsap.from(".logo-partner", {
   opacity: 0,
-  y: 200,
+  y: 50,
   duration: 0.6,
   ease: "power2.out",
   scrollTrigger: {
@@ -230,10 +230,37 @@ gsap.from(".guide-boxes", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".guide-boxes",
-    start: "top 80%",
+    start: "top 90%",
     once: true,
   }
 });
+
+function applyAnimationBasedOnMediaQuery() {
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+  if (mediaQuery.matches) {
+    document.querySelectorAll(".guide-boxes > div").forEach((item) => {
+      gsap.from(item, {
+        y: 40,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 90%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
+  } else {
+    gsap.killTweensOf(".guide-boxes > div");
+  }
+}
+
+applyAnimationBasedOnMediaQuery();
+
+window.matchMedia("(max-width: 768px)").addEventListener("change", applyAnimationBasedOnMediaQuery);
 
 gsap.from(".dow-title", {
   opacity: 0,
@@ -247,8 +274,6 @@ gsap.from(".dow-title", {
   }
 });
 
-
-
 gsap.from(".faq h2", {
   opacity: 0,
   y: 40,
@@ -261,8 +286,6 @@ gsap.from(".faq h2", {
   }
 });
 
-
-
 const questions = document.querySelectorAll(".faq-question");
 
 questions.forEach(question => {
@@ -273,12 +296,10 @@ questions.forEach(question => {
 
     const isOpen = answer.style.maxHeight;
 
-    if(isOpen) {
+    if (isOpen) {
       answer.style.maxHeight = null;
       arrow.style.transform = "rotate(0deg)";
-    }
-
-    else {
+    } else {
       answer.style.maxHeight = answer.scrollHeight + "px";
       arrow.style.transform = "rotate(180deg)";
     }
@@ -298,4 +319,3 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     }
   });
 });
-
