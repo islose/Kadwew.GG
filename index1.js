@@ -10,7 +10,36 @@ tl.from(".hero-images .main-image", { opacity: 0, scale: 0.8, duration: 1})
   .from(".hero-content p", { opacity: 0, x: -200, duration: 0.8 }, "-=0.6")
   .from(".ndDownBtn", { opacity: 0, x: -100, duration: 0.3, onComplete: () => {
     gsap.set(".ndDownBtn", { clearProps: "all" });
-} }, "-=0.6");
+} }, "-=0.6")
+
+  .from(".mail h2", { opacity: 0, x: -200, duration: 0.8 }, "-=0.6")
+  .from(".mail form", { opacity: 0, x: -200, duration: 1 }, "-=0.4")
+  .from(".mail input", { opacity: 0, x: -200, duration: 0.6 }, "-=0.9")
+  .from(".email-btn", { opacity: 0, x: -200, duration: 0.6 }, "-=0.6")
+  .from(".mail p", { opacity: 0, x: -200, duration: 0.5 }, "-=0.6");
+
+
+  // Cibler le bouton
+const button = document.querySelector(".email-btn");
+
+button.addEventListener("mouseenter", () => {
+  gsap.to(button, {
+    backgroundColor: "linear-gradient(to bottom, hsl(281, 98%, 63%), hsl(288, 100%, 54%))", // Nouvelle couleur de fond au survol
+    scale: 1.1, // Agrandissement du bouton
+    duration: 0.3, // Durée de la transition
+    ease: "power1.out" // Effet d'animation
+  });
+});
+
+button.addEventListener("mouseleave", () => {
+  gsap.to(button, {
+    backgroundColor: "#ff7e5f", // Retour à la couleur d'origine
+    scale: 1, // Retour à la taille normale
+    duration: 0.3, // Durée de la transition
+    ease: "power1.out" // Effet d'animation
+  });
+});
+
 
 const features = document.getElementById("features");
 const dropdown = document.querySelector(".dropdown-menu");
@@ -235,8 +264,28 @@ gsap.from(".guide-boxes", {
   }
 });
 
+const guideBoxes = document.querySelectorAll(".guide-boxes > div");
+
+guideBoxes.forEach((box) => {
+  box.addEventListener("mouseenter", () => {
+    gsap.to(box, {
+      scale: 1.03,
+      duration: 0.1,
+      ease: "power1.out"
+    });
+  });
+
+  box.addEventListener("mouseleave", () => {
+    gsap.to(box, {
+      scale: 1,
+      duration: 0.1,
+      ease: "power1.out"
+    });
+  });
+});
+
 function applyAnimationBasedOnMediaQuery() {
-  const mediaQuery = window.matchMedia("(max-width: 768px)");
+  const mediaQuery = window.matchMedia("(max-width: 2500px)");
 
   if (mediaQuery.matches) {
     document.querySelectorAll(".guide-boxes > div").forEach((item) => {
@@ -260,7 +309,7 @@ function applyAnimationBasedOnMediaQuery() {
 
 applyAnimationBasedOnMediaQuery();
 
-window.matchMedia("(max-width: 768px)").addEventListener("change", applyAnimationBasedOnMediaQuery);
+window.matchMedia("(max-width: 1280px)").addEventListener("change", applyAnimationBasedOnMediaQuery);
 
 gsap.from(".dow-title", {
   opacity: 0,
@@ -316,6 +365,55 @@ document.querySelectorAll(".faq-item").forEach((item) => {
       trigger: item,
       start: "top 90%",
       toggleActions: "play none none none"
+    }
+  });
+});
+
+/*
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1266) {
+      toggle.classList.remove("active");
+      mobileMenu.classList.remove("active");
+    }
+  });
+});
+*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggle.addEventListener("click", () => {
+    const isActive = mobileMenu.classList.contains("active");
+
+    if (isActive) {
+      
+      mobileMenu.style.opacity = "0";
+      mobileMenu.style.transform = "translateY(-100%)";
+
+      setTimeout(() => {
+        mobileMenu.classList.remove("active");
+        mobileMenu.style = "";
+      }, 300);
+    } else {
+      mobileMenu.classList.add("active");
+    }
+
+    toggle.classList.toggle("active");
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1266) {
+      toggle.classList.remove("active");
+      mobileMenu.classList.remove("active");
     }
   });
 });

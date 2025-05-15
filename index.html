@@ -13,10 +13,20 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">
+            <a href="test.html" class="logo">
                 <img src="./Icons/IconKadwew.png" alt="Kadwew logo" class="logo-img">
                 <p class="kad">Kadwew.GG</p>
             </a>
+
+            <!--------- Menu Icon --------->
+
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fa-solid fa-bars" id="icon-bars"></i>
+              <i class="fa-solid fa-xmark" id="icon-close"></i>
+            </div>
+
+            <!-------- Desktop Menu -------->
+
             <ul class="nav-links">
                 <li><a href="#">About us</a></li>
                 <li id="features">
@@ -41,9 +51,32 @@
                 <li><a href="#">Kadwew Pro</a></li>
                 <li><a href="#">Live Highlighting</a></li>
             </ul>
+
+            <!------- Mobile Menu ------->
+
+             <div class="mobile-menu" id="mobile-menu">
+              
+              <h2>About us</h2>
+
+              <ul>
+                <li><a href="#">Screen Recording</a></li>
+                <li><a href="#">AI Clips</a></li>
+                <li><a href="#">AI Video Editing</a></li>
+                <li><a href="#">Content Management</a></li>
+              </ul>
+              <h2>Features</h2>
+
+              <ul>
+                <li><a href="#">Gamer</a></li>
+                <li><a href="#">Gaming Creator</a></li>
+                <li><a href="#">Editor</a></li>
+              </ul>
+             </div>
+
             <button id="downBtn">Download for PC</button>
         </nav>
     </header>
+
     <main>
         <section class="hero">
             <div class="hero-content">
@@ -68,6 +101,18 @@
                 <img src="./other-images/jhin.png" class="floating-image img2" alt="Floating Image 2">
             </div>
         </section>
+
+        <!------ Mobile Mail Section ------->
+
+        <div class="mail">
+          <h2>Join us</h2>
+          <form action="https://example.com/submit" method="POST">
+            <input type="email" placeholder="Enter your email" required class="email-input">
+          </form>
+          <button type="submit" class="email-btn">Subscribe</button>
+          <p>Subscribe to our newsletter for the latest updates and features!</p>
+        </div>
+
 
         <div class="ytVid" id="ytVid">
             <iframe  src="https://www.youtube.com/embed/xstC1WPog_o"
@@ -374,5 +419,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="index1.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
