@@ -2,7 +2,7 @@
 let tl = gsap.timeline();
 
 tl.from(".hero-images .main-image", { opacity: 0, scale: 0.8, duration: 1})
-  .from(".hero-images .floating-image", { opacity: 0, scale: 0.8, duration: 0.8, stagger: 0.3}, "-=0.5")
+  .from(".hero-images .floating-image", { opacity: 0, scale: 0.8, duration: 0.8}, "-=0.5")
 
   .from(".hero-content", {opacity: 0, x: -100, duration: 1}, "-=0.6")
   .from(".RecBtn", { opacity: 0, x: -200, duration: 0.8 }, "-=0.6")
@@ -293,7 +293,7 @@ function applyAnimationBasedOnMediaQuery() {
         y: 40,
         opacity: 0,
         duration: 0.6,
-        stagger: 0.2,
+        
         ease: "power2.out",
         scrollTrigger: {
           trigger: item,
@@ -368,25 +368,6 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     }
   });
 });
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1266) {
-      toggle.classList.remove("active");
-      mobileMenu.classList.remove("active");
-    }
-  });
-});
-*/
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menu-toggle");
