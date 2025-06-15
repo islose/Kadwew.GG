@@ -2,7 +2,7 @@
 let tl = gsap.timeline();
 
 tl.from(".hero-images .main-image", { opacity: 0, scale: 0.8, duration: 1})
-  .from(".hero-images .floating-image", { opacity: 0, scale: 0.8, duration: 0.8, stagger: 0.3}, "-=0.5")
+  .from(".hero-images .floating-image", { opacity: 0, scale: 0.8, duration: 0.8}, "-=0.5")
 
   .from(".hero-content", {opacity: 0, x: -100, duration: 1}, "-=0.6")
   .from(".RecBtn", { opacity: 0, x: -200, duration: 0.8 }, "-=0.6")
@@ -17,6 +17,7 @@ tl.from(".hero-images .main-image", { opacity: 0, scale: 0.8, duration: 1})
   .from(".mail input", { opacity: 0, x: -200, duration: 0.6 }, "-=0.9")
   .from(".email-btn", { opacity: 0, x: -200, duration: 0.6 }, "-=0.6")
   .from(".mail p", { opacity: 0, x: -200, duration: 0.5 }, "-=0.6");
+
 
 
 const button = document.querySelector(".email-btn");
@@ -90,8 +91,6 @@ gsap.from("#ytVid", {
   }
 });
 
-const omenAmd = document.getElementById("#omenAmd");
-
 gsap.from(".omenAmd", {
   opacity: 0,
   y: 200,
@@ -127,13 +126,24 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       x: `-${totalWidth}px`,
       ease: "linear",
-      duration: 50,
-      repeat: -1, 
+      duration: 30,
+      repeat: -1,
+      paused: true,
     }
   );
+
+  ScrollTrigger.create({
+    trigger: ".feedBacks",
+    start: "top bottom",
+    end: "bottom top",
+    onEnter: () => anim.resume(),
+    onLeave: () => anim.pause(),
+    onEnterBack: () => anim.resume(),
+    onLeaveBack: () => anim.pause(),
+  });
 });
 
-gsap.from(".feedBacks", {
+gsap.from(".slider", {
   opacity: 0,
   y: 200,
   duration: 0.6,
@@ -196,6 +206,8 @@ ScrollTrigger.create({
   onEnterBack: () => logoAnim.resume(),
   onLeaveBack: () => logoAnim.pause(),
 });
+
+
 
 gsap.from("#app-info1", {
   opacity: 0,
@@ -274,6 +286,7 @@ gsap.from(".guide-boxes", {
   }
 });
 
+
 const guideBoxes = document.querySelectorAll(".guide-boxes > div");
 
 guideBoxes.forEach((box) => {
@@ -303,7 +316,7 @@ function applyAnimationBasedOnMediaQuery() {
         y: 40,
         opacity: 0,
         duration: 0.6,
-        stagger: 0.2,
+        
         ease: "power2.out",
         scrollTrigger: {
           trigger: item,
@@ -345,6 +358,7 @@ gsap.from(".faq h2", {
   }
 });
 
+
 const questions = document.querySelectorAll(".faq-question");
 
 questions.forEach(question => {
@@ -379,25 +393,6 @@ document.querySelectorAll(".faq-item").forEach((item) => {
   });
 });
 
-/*
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1266) {
-      toggle.classList.remove("active");
-      mobileMenu.classList.remove("active");
-    }
-  });
-});
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -427,3 +422,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+

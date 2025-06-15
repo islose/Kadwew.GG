@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kadwew.GG - Your ultimate gaming companion for screen recording, AI clips, and video editing. Capture, edit, and share your best moments effortlessly.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutUs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" type="png" href="./Icons/IconKadwew.png">
+    <link rel="icon" type="png" href="/Icons/IconKadwew.png">
 
-    <title>Kadwew.GG</title>
+    <title>About Us | Kadwew.GG</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="./Icons/IconKadwew.png" alt="Kadwew logo" class="logo-img">
+            <a href="/index.html" class="logo">
+                <img src="/Icons/IconKadwew.png" alt="Kadwew logo" class="logo-img">
                 <p class="kad">Kadwew.GG</p>
             </a>
 
@@ -28,7 +27,7 @@
             <!-------- Desktop Menu -------->
 
             <ul class="nav-links">
-                <li><a href="./Menu/About Us/aboutUs.html">About us</a></li>
+                <li id="abt"><a href="./Menu/About Us/aboutUs.html">About us</a></li>
                 <li id="features">
                     <a href="#">Features</a>
                     <ul class="dropdown-menu">
@@ -77,139 +76,43 @@
               <h2>Kadwew Pro</h2>
              </div>
 
-            <button id="downBtn">Download for PC</button>
+             <button id="downBtn">Download for PC</button>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="RecBtn">
-                    <div class="rond">
-                        <div class="rondC"></div>
-                    </div>
-                    <span class="recText">REC</span>
-                    <div class="recLink">The Kadwew recorder is back !</div>
-                </div>
-                <h1>Game like Legends,<br><span class="ndText">Edit like Kadwew</span></h1>
-                <p>Bookmarks, clips, and montages in just a few clicks <br>
-                    Bring your best moments to life with Kadwew.
-                </p><br>
-                <button class="ndDownBtn">
-                    <i class="fa-brands fa-windows"></i> Download for PC
-                </button>
-            </div>
-            <div class="hero-images">
-                <img src="./other-images/game-mmedium.jpg" class="main-image" alt="Main Image">
-                <img src="./other-images/ediit.png" class="floating-image img1" alt="Floating Image 1">
-                <img src="./other-images/jhin.png" class="floating-image img2" alt="Floating Image 2">
+        <section>
+            <div class="mission-container">
+                <h2>Our Mission</h2>
+                <p>Kadwew.GG empowers gamers to effortlessly transform gameplay into captivating stories through cutting-edge local AI, fostering creativity and community.</p>
             </div>
         </section>
 
-        <!------ Mobile Mail Section ------->
-
-        <div class="mail">
-          <h2>Join us</h2>
-          <form action="https://example.com/submit" method="POST">
-            <input type="email" placeholder="Enter your email" class="email-input">
-            <p id="error-email"></p>
-            <button type="submit" class="email-btn">Subscribe</button>
-          </form>
-          <p>Subscribe to our newsletter for the latest updates and features!</p>
+        <div class="journey">
+            <h2>Our Journey</h2>
         </div>
 
-
-        <div class="ytVid" id="ytVid">
-            <iframe  src="https://www.youtube.com/embed/xstC1WPog_o"
-                title="" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-
-        <div class="omenAmd">
-            <img class="Omen" src="./other-images/HP_Omen_logo.svg.png" alt="Omen logo">
-            <img class="Amd" src="./other-images/amd-twa-logo-lockup.avif" alt="Amd logo">
-        </div>
-
-        <div class="slider">
-            <div class="feedBacks">
-
-                <div class="box">
-                    <p class="comment">"Amazing app! Super easy to use, and the editing tools are top-notch. My videos have never looked better!"</p>
-                    <div class="userInfo">
-                        <img class="pp" src="./other-images/jhin.png" alt="Jhin Profile Picture">
-                        <div class="userDetails">
-                            <p class="username">Jhin</p>
-                            <p class="job">The Virutose</p>
-                        </div>
-                    </div>
+        <section>
+            <div class="journey-container">
+                <div class="journey-item" id="from-items">
+                    <h3>2019</h3>
+                    <p>Founded by a group of passionate gamers and developers.</p>
                 </div>
-                <div class="box">
-                    <p class="comment">"Love it! Smooth interface, great effects, and no annoying ads. Perfect for quick edits!"</p>
-                    <div class="userInfo">
-                        <img class="pp" src="./other-images/elsword - Copie.ico" alt="elsword Profile Picture">
-                        <div class="userDetails">
-                            <p class="username">Elsword</p>
-                            <p class="job">MMORPG</p>
-                        </div>
-                    </div>
+                <div class="journey-item" id="from-items">
+                    <h3>2020</h3>
+                    <p>Launched the first version of Kadwew.GG, focusing on screen recording.</p>
                 </div>
-                <div class="box">
-                    <p class="comment">"Tried many editing apps, but this one is by far the best. Simple yet powerful. Highly recommend!"</p>
-                    <div class="userInfo">
-                        <img class="pp" src="./dice_Images/1.png" alt="dice Profile Picture">
-                        <div class="userDetails">
-                            <p class="username">Dice #1</p>
-                            <p class="job">Dice</p>
-                        </div>
-                    </div>
+                <div class="journey-item" id="scroll-items">
+                    <h3>2021</h3>
+                    <p>Introduced AI Clips, revolutionizing how gamers create content.</p>
                 </div>
-                <div class="box">
-                    <p class="comment">"I'm impressed! The transitions and filters are just what I needed. Editing is fast and fun!"</p>
-                    <div class="userInfo">
-                        <img class="pp" src="./other-images/halland.png" alt="halland Profile Picture">
-                        <div class="userDetails">
-                            <p class="username">Halland</p>
-                            <p class="job">Footballer</p>
-                        </div>
-                    </div>
+                <div class="journey-item" id="scroll-items">
+                    <h3>2023</h3>
+                    <p>Launched Kadwew Pro, enhancing user experience with advanced tools.</p>
                 </div>
-                <div class="box">
-                    <p class="comment">"A must-have for content creators. Intuitive design and great features. Totally worth it!"</p>
-                    <div class="userInfo">
-                        <img class="pp" src="./other-images/Kadwew.jpeg" alt="kadwew Profile Picture">
-                        <div class="userDetails">
-                            <p class="username">Kadwew</p>
-                            <p class="job">CEO of kadwew corp</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <p class="comment">"Fantastic app! Makes video editing feel effortless. My social media posts look way more professional now!"</p>
-                    <div class="userInfo">
-                        <img class="pp" src="./other-images/icon.ico" alt="riot Profile Picture">
-                        <div class="userDetails">
-                            <p class="username">Riot</p>
-                            <p class="job">CEO of riot games</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="partner">
-            <h2 class="h2-part">Approuved By</h2>
-            <div class="slide-container">
-                <div class="logo-partner">
-                    <img src="./logo-partner/activision.png" alt="activision logo">
-                    <img src="./logo-partner/ea.png" alt="electronic arts logo">
-                    <img src="./logo-partner/nintendo.png" alt="nintendo logo">
-                    <img src="./logo-partner/nvidia.png" alt="nvidia logo">
-                    <img src="./logo-partner/ps.png" alt="playstation logo">
-                    <img src="./logo-partner/riot games.png" alt="riot games logo">
-                    <img src="./logo-partner/rockstar.png" alt="rockstar games logo">
-                    <img src="./logo-partner/xbox.png" alt="xbox logo">
+                <div class="journey-item" id="scroll-items">
+                    <h3>Today</h3>
+                    <p>Kadwew leverages the latest technology to automate bookmark identification and simplify clip and montage creation for gamers.</p>
                 </div>
             </div>
         </section>
@@ -218,11 +121,11 @@
             <div class="container">
               <div class="row">
                 <div class="img-info">
-                  <img src="./info images/info1.png" alt="info image 1">
+                  <img src="./assets/images/Image Illustration1.png" alt="info image 1">
                 </div>
                 <div class="description">
-                  <h2>Screen-Record Your Gaming Sessions</h2>
-                  <p>Capture your gaming sessions with Kadwew's low-resource, native screen recorder.</p>
+                  <h2>The Kadwew AI Difference</h2>
+                  <p>We train over 35 AI models in-house, fine-tuned to capture the nuances of popular games and recognize the key moments—whether you're chatting with friends, strategizing with your team, or diving into a brand-new game.</p>
                 </div>
               </div>
             </div>
@@ -232,52 +135,19 @@
             <div class="container">
               <div class="row">
                 <div class="img-info">
-                  <img src="./info images/info2.png" alt="info image 2">
+                  <img src="./assets/images/Image Illustration2.png" alt="info image 2">
                 </div>
                 <div class="description">
-                  <h2>Automatically Clip Your Best Gaming Moments</h2>
-                  <p>Effortlessly let Kadwew AI identify and clip the best short moments from your screen recordings or streams (Twitch, Kick, YouTube)—capturing key in-game events and the most fun moments with you and your friends.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-          <section id="app-info3" class="app-info">
-            <div class="container">
-              <div class="row">
-                <div class="img-info">
-                  <img src="./info images/info3.png" alt="info image 3">
-                </div>
-                <div class="description">
-                  <h2>AI Automontages</h2>
-                  <p>Effortlessly transform hours of gaming footage into polished, share-ready montages with just a few clicks. Kadwew's AI eliminates the need to rewatch lengthy recordings by automating content creation, empowering gamers and gaming creators to post fresh, engaging shorts daily and stay ahead of the game.</p>
+                  <h2>AI-Powered, Gamer-Approved</h2>
+                  <p>Whether you're a gamer wanting to share your best moments or a creator looking to grow your audience, Kadwew AI makes content creation efficient and effortless.</p>
                 </div>
               </div>
             </div>
           </section>
 
-        <div class="kad-tech">
+          <div class="kad-tech">
             <h2><span class="ndText">Real-time Automontages</span> with<br> Kadwew Pro, Kadwew by AMD</h2>
             <p>Take your content creation to the next level with Kadwew Pro, optimized for the next-generation AMD XDNA™ NPUs. By leveraging cutting-edge hardware—including AMD Radeon™ graphics, AMD RDNA™ architecture, and advanced AI-driven NPUs—Kadwew delivers seamless highlight capture and real-time automontages, all without impacting your gameplay.</p>
-        </div>
-        
-        <div class="guide-boxes">
-            <div class="guide-box1">
-                <i class="fa-solid fa-video"></i>
-                <p>Screen Recording</p>
-            </div>
-            <div class="guide-box2">
-                <i class="fa-solid fa-film"></i>
-                <p>AI clips</p>
-            </div>
-            <div class="guide-box3">
-                <i class="fa-solid fa-scissors"></i>
-                <p>AI Video Editing</p>
-            </div>
-            <div class="guide-box4">
-                <i class="fa-solid fa-list-check"></i>
-                <p>Content Management</p>
-            </div>
         </div>
 
         <div class="dow-title">
@@ -391,13 +261,13 @@
               </div>
           
             </div>
-          </div>          
+          </div>
     </main>
 
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="./Icons/IconKadwew.png" alt="Kadwew logo" class="footer-logo-img">
+          <img src="/Icons/IconKadwew.png" alt="Kadwew logo" class="footer-logo-img">
           <p class="footer-kad">Kadwew.GG</p>
         </div>
 
@@ -423,8 +293,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="index1.js"></script>
-    <script src="interactions.js"></script>
-    <script src="test.js"></script>
+    <script src="/Menu/About Us/aboutUs.js"></script>
 </body>
 </html>
