@@ -198,8 +198,17 @@ main {
 }
 
 .mobile-menu h2 {
-    margin: 30px 10px;
-    font-size: 1.4rem;
+    margin: 30px 0px;
+    font-size: 1.5rem;
+}
+
+.mobile-menu h2 a {
+    color: hsl(199, 74%, 53%);
+    text-decoration: none;
+}
+
+.mobile-menu h2 a:hover {
+    background-color: rgb(80, 80, 80);
 }
 
 .mobile-menu h3 {
@@ -244,7 +253,7 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 60px;
-    margin-left: clamp(0px, 20vw, 250px);
+    margin-left: clamp(0px, 10vw, 250px);
     color: hsl(0, 0%, 100%);
 }
 
@@ -261,16 +270,11 @@ main {
     line-height: 1.6;
     max-width: 1100px;
     margin-bottom: 30px;
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 80%);
 }
 
-.journey h2 {
-    font-size: 4.5rem;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    padding: 60px;
-    margin-left: clamp(0px, 20vw, 250px);
-    color: hsl(0, 0%, 100%);
+#journey {
+    margin-top: 50px;
 }
 
 .journey-container {
@@ -329,7 +333,7 @@ main {
     font-size: clamp(1rem, 1.3rem, 1.5rem);
     line-height: 1.6;
     max-width: 900px;
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 80%);
     margin-bottom: 20px;
     
 }
@@ -367,13 +371,14 @@ main {
 
 .description h2 {
     font-size: 3rem;
-    color: white;
+    color: hsl(271, 97%, 63%);
     margin-bottom: 15px;
 }
 
 .description p {
     font-size: 1.2rem;
-    color: white;
+    color: hsla(0, 0%, 100%, 0.800);
+    font-weight: bold;
     line-height: 1.6;
 }
 
@@ -605,14 +610,24 @@ footer {
         display: none
     }
 
-    .journey-container::before {
-        left: 4px;
+    .mission-container {
+        margin-top: -100px;
+        padding: 30px;
     }
 
-    .journey-item h3 {
-        font-size: 1rem;
-        width: 50px;
-        height: 22px;
+    .mission-container h2 {
+        font-size: 3rem;
+    }
+
+    .mission-container p {
+        display: flex;
+        max-width: 100%;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .journey-container::before {
+        left: 4px;
     }
 
     .journey-item h3::before {
@@ -636,10 +651,14 @@ footer {
     .reverse .row {
         flex-direction: column;
     }
+
+    #app-info2 {
+        margin-top: auto;
+    }
     
     .img-info img {
         width: 100%;
-        max-width: 100%;
+        max-width: 600px;
         height: auto;
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);

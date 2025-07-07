@@ -191,6 +191,15 @@ body {
     font-size: 1.4rem;
 }
 
+.mobile-menu h2 a {
+    color: hsl(199, 74%, 53%);
+    text-decoration: none;
+}
+
+.mobile-menu h2 a:hover {
+    background-color: rgb(80, 80, 80);
+}
+
 .mobile-menu h3 {
     font-size: 1.2rem;
     color: hsl(281, 98%, 63%);
@@ -470,6 +479,7 @@ body {
 .ytVid {
     overflow: hidden;
     margin: auto;
+    pointer-events: none;
 }
 
 .ytVid iframe {
@@ -478,6 +488,15 @@ body {
     border-radius: 15px;
     width: 870px;
     height: 490px;
+}
+
+.ytOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 .omenAmd {
@@ -628,14 +647,15 @@ body {
 
 .description h2 {
     font-size: 3rem;
-    color: white;
+    color: hsl(271, 97%, 63%);
     margin-bottom: 15px;
 }
 
 .description p {
     font-size: 1.2rem;
-    color: white;
+    color: hsla(0, 0%, 100%, 0.800);
     line-height: 1.6;
+    font-weight: bold;
 }
 
 .kad-tech {
@@ -861,6 +881,39 @@ footer {
     opacity: 0.7;
 }
 
+@media (min-width: 300px) and (max-width: 1000px) {
+
+    .row {
+        flex-direction: column !important;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .reverse .row {
+        flex-direction: column;
+    }
+    
+    .img-info img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    }
+    
+    .description h2 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+        font-weight: bolder;
+    }
+    
+    .description p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
 @media (min-width: 300px) and (max-width: 1266px) {
 
     .navbar {
@@ -940,38 +993,12 @@ footer {
     }
 
     .ytVid iframe {
-        width: 70%;
+        width: 90%;
         height: 100%;
         aspect-ratio: 16/9;
     }
 
-    .row {
-        flex-direction: column !important;
-        gap: 30px;
-        text-align: center;
-    }
     
-    .reverse .row {
-        flex-direction: column;
-    }
-    
-    .img-info img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    }
-    
-    .description h2 {
-        font-size: 2rem;
-        margin-top: 20px;
-    }
-    
-    .description p {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
 
     .kad-tech h2 {
         font-size: 2.5rem;

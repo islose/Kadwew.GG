@@ -1,29 +1,3 @@
-const features = document.getElementById("features");
-const dropdown = document.querySelector(".dropdown-menu");
-
-gsap.set(dropdown, { autoAlpha: 0, y: 10});
-
-features.addEventListener("mouseenter", () => {
-    gsap.to(dropdown, { autoAlpha: 1, y: 0, duration: 0.3});
-});
-
-features.addEventListener("mouseleave", () => {
-    gsap.to(dropdown, { autoAlpha: 0, y: 10, duration: 0.3});
-});
-
-const useCases = document.getElementById("useCases");
-const dropdown2 = document.querySelector(".dropdown-menu2");
-
-gsap.set(dropdown2, { autoAlpha: 0, y: 10});
-
-useCases.addEventListener("mouseenter", () => {
-  gsap.to(dropdown2, { autoAlpha: 1, y: 0, duration: 0.3});
-});
-
-useCases.addEventListener("mouseleave", () => {
-  gsap.to(dropdown2, { autoAlpha: 0, y: 10, duration: 0.3});
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -54,25 +28,73 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const features = document.getElementById("features");
+const dropdown = document.querySelector(".dropdown-menu");
+
+gsap.set(dropdown, { autoAlpha: 0, y: 10});
+
+features.addEventListener("mouseenter", () => {
+    gsap.to(dropdown, { autoAlpha: 1, y: 0, duration: 0.3});
+});
+
+features.addEventListener("mouseleave", () => {
+    gsap.to(dropdown, { autoAlpha: 0, y: 10, duration: 0.3});
+});
+
+const useCases = document.getElementById("useCases");
+const dropdown2 = document.querySelector(".dropdown-menu2");
+
+gsap.set(dropdown2, { autoAlpha: 0, y: 10});
+
+useCases.addEventListener("mouseenter", () => {
+  gsap.to(dropdown2, { autoAlpha: 1, y: 0, duration: 0.3});
+});
+
+useCases.addEventListener("mouseleave", () => {
+  gsap.to(dropdown2, { autoAlpha: 0, y: 10, duration: 0.3});
+});
+
 let tl = gsap.timeline();
 
-tl.from(".mission-container h2, .journey h2", { opacity: 0, y: 80, duration: 1 })
-tl.from(".mission-container p, #from-items", { opacity: 0, y: 80, duration: 1 }, "-=0.5)")
+tl.from(".main-title h1", { opacity: 0, y: 200, duration: 2}, "-=0.9")
+  .from(".main-title p", { opacity: 0, y: 50, duration: 0.8}, "-=0.7")
+  .from(".download", { opacity: 0, y: 50, duration: 0.6}, "-=0.5")
+;
 
-const scrollItems = document.querySelectorAll("#scroll-items");
+gsap.from (".ytVid", {
+  opacity: 0,
+  y: 200,
+  duration: 0.6,
+  ease: "power.2 out",
+  scrollTrigger: {
+    trigger: ".ytVid",
+    start: "top 60%",
+    once: true,
+  }
+});
 
-document.querySelectorAll("#scroll-items").forEach((item) => {
-  gsap.from(item, {
-    y: 50,
-    opacity: 0,
-    duration: 0.6,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: item,
-      start: "top 90%",
-      toggleActions: "play none none none"
-    }
-  });
+gsap.from (".second-title h2", {
+  opacity: 0,
+  y: 100,
+  duration: 0.6,
+  ease: "power.2 out",
+  scrollTrigger: {
+    trigger: ".second-title h2",
+    start: "top 70%",
+    once: true,
+  }
+});
+
+gsap.from (".second-title p", {
+  opacity: 0,
+  y: 100,
+  duration: 0.6,
+  ease: "power.2 out",
+  scrollTrigger: {
+    trigger: ".second-title p",
+    start: "top 70%",
+    once: true,
+  }
 });
 
 gsap.from("#app-info1", {
@@ -101,40 +123,38 @@ gsap.from("#app-info2", {
   }
 });
 
-gsap.from(".kad-tech h2", {
+gsap.from(".why-kadwew-content h2", {
   opacity: 0,
   y: 200,
   duration: 0.6,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".kad-tech h2",
-    start: "top 80%",
-    end: "top 10%",
+    trigger: ".why-kadwew-content h2",
+    start: "top 90%",
     once: true,
   }
 });
 
-gsap.from(".kad-tech p", {
+gsap.from(".why-kadwew-content p", {
   opacity: 0,
   y: 200,
   duration: 0.6,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".kad-tech p",
-    start: "top 80%",
-    end: "top 10%",
+    trigger: ".why-kadwew-content p",
+    start: "top 90%",
     once: true,
   }
 });
 
-gsap.from(".dow-title", {
+gsap.from(".why-kadwew-content button", {
   opacity: 0,
-  y: 40,
+  y: 200,
   duration: 0.6,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".dow-title",
-    start: "top 60%",
+    trigger: ".why-kadwew-content button",
+    start: "top 90%",
     once: true,
   }
 });
@@ -146,7 +166,7 @@ gsap.from(".faq h2", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".faq h2",
-    start: "top 80%",
+    start: "top 70%",
     once: true,
   }
 });

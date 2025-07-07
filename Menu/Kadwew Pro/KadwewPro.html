@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="KadwewPro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="png" href="/Icons/IconKadwew.png">
+
+    <title>AI-Powered Clipping Software For Gaming | Kadwew.GG</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" class="logo">
+                <img src="/Icons/IconKadwew.png" alt="Kadwew logo" class="logo-img">
+                <p class="kad">Kadwew.GG</p>
+            </a>
+
+            <!--------- Menu Icon --------->
+
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fa-solid fa-bars" id="icon-bars"></i>
+              <i class="fa-solid fa-xmark" id="icon-close"></i>
+            </div>
+
+            <!-------- Desktop Menu -------->
+
+            <ul class="nav-links">
+                <li><a href="/Menu/About Us/aboutUs.html">About us</a></li>
+                <li id="features">
+                    <a href="#">Features</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Menu/Features/Screen Recording/ScreenRecording.html"><i class="fa-solid fa-video"></i> Screen Recording</a></li>
+                        <li><a href="/Menu/Features/Ai Clips/AiClips.html"><i class="fa-solid fa-film"></i> AI Clips</a></li>
+                        <li><a href="/Menu/Features/Ai Video Editing/AiVideoEditing.html"><i class="fa-solid fa-scissors"></i> AI Video Editing</a></li>
+                        <li><a href="/Menu/Features/Content Managment/ContentManagement.html"><i class="fa-solid fa-list-check"></i> Content Management</a></li>
+                    </ul>
+                </li>
+
+                <li id="useCases">
+                    <a href="#">Use Cases</a>
+                    <ul class="dropdown-menu2">
+                        <li><a href="/Menu/Use Cases/Gamer/Gamer.html"><i class="fa-solid fa-gamepad"></i>Gamer</a></li>
+                        <li><a href="/Menu/Use Cases/Gaming Creator/GamingCreator.html"><i class="fa-solid fa-square-plus"></i> Gaming Creator</a></li>
+                        <li><a href="/Menu/Use Cases/Editor/Editor.html"><i class="fa-solid fa-pen-to-square"></i> Editor</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="/Menu/Use Cases/Live Highlighting/LiveHighlighting.html">Live Highlighting</a></li>
+                <li><a href="/Menu/Kadwew Pro/KadwewPro.html">Kadwew Pro</a></li>
+            </ul>
+
+            <!------- Mobile Menu ------->
+
+             <div class="mobile-menu" id="mobile-menu">
+              
+              <h2><a href="../About Us/aboutUs.html">About us</a></h2>
+
+              <h3>Features :</h3>
+              <ul>
+                <li><a href="/Menu/Features/Screen Recording/ScreenRecording.html">Screen Recording</a></li>
+                <li><a href="/Menu/Features/Ai Clips/AiClips.html">AI Clips</a></li>
+                <li><a href="/Menu/Features/Ai Video Editing/AiVideoEditing.html">AI Video Editing</a></li>
+                <li><a href="/Menu/Features/Content Managment/ContentManagement.html">Content Management</a></li>
+              </ul>
+              <h3>Use Cases :</h3>
+
+              <ul>
+                <li><a href="/Menu/Use Cases/Gamer/Gamer.html">Gamer</a></li>
+                <li><a href="/Menu/Use Cases/Gaming Creator/GamingCreator.html">Gaming Creator</a></li>
+                <li><a href="/Menu/Use Cases/Editor/Editor.html">Editor</a></li>
+                <li><a href="/Menu/Use Cases/Live Highlighting/LiveHighlighting.html">Live Highlighting</a></li>
+              </ul>
+
+              <h2 id="kdp"><a href="/Menu/Kadwew Pro/KadwewPro.html">Kadwew Pro</a></h2>
+             </div>
+
+            <button id="downBtn">Download for PC</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="kadwew-pro">
+            <div class="kadwew-pro-content">
+                <h1>Kadwew Pro</h1>
+                <p>Unlock the full potential of Kadwew with our Pro version, designed for gamers and content creators who demand the best.</p>
+                <p>Choose the plan that's right for you</p>
+                <div class="pro-btn">
+                    <button id="pro-btn1" class="pro-btn-C Active">Monthly</button>
+                    <button id="pro-btn2" class="pro-btn-C">Yearly</button>    
+                </div>
+            </div>        
+        </section>
+
+        <section class="subscription-plans">
+            <div class="plan">
+                <div class="plan-header">
+                    <h2>Kadwew Free</h2>
+                </div>
+                <div class="plan-price">
+                    <p class="price">$0</p>
+                </div>
+                <div class="plan-content">
+                    <p>For gamers and aspiring creators exploring their passion, free.</p>
+                </div>
+                <div class="plan-time">
+                    <p>Unlimited</p>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Gameplay recording</li>
+                        <li><i class="fa-solid fa-check"></i>AI Montages</li>
+                        <li><i class="fa-solid fa-check"></i>Video analysis</li>
+                        <li><i class="fa-solid fa-check"></i>Clips export</li>
+                    </ul> 
+                    <div class="plan-limitations">
+                        <p>Limitations</p>
+                        <ul>
+                            <li>Max 1080p recording</li>
+                            <li>Max 1080 export</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-button">
+                    <button class="subscribe-btn">Download for PC</button>
+                </div>
+            </div>
+
+            <div class="plan-pro">
+                <div class="plan-header-pro">
+                    <h2>Kadwew Pro</h2>
+                </div>
+                <div class="plan-price">
+                    <p id="price" class="price">$9.99/month</p>
+                </div>
+                <div class="plan-content">
+                    <p>For gamers and creators who want to go pro with exclusive features</p>
+                </div>
+                <div class="plan-time-pro">
+                    <p><i class="fa-solid fa-arrow-left"></i>Everything in Free plan</p>
+                </div>
+                <div class="plan-features-pro">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Up to 4k/120fps recording</li>
+                        <li><i class="fa-solid fa-check"></i>Up to 4k/120fps export</li>
+                        <li><i class="fa-solid fa-check"></i>Outro-free exports</li>
+                        <li><i class="fa-solid fa-check"></i>Priority support</li>
+                    </ul>
+                </div>
+                <div class="plan-button-pro">
+                    <button class="subscribe-btn-pro">Download for PC</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="coming-soon">
+            <div class="soon-title">
+                <h2 class="colored">Kadwew Pro</h2>
+                <h2>Coming soon features</h2>
+            </div>
+
+            <div class="features-list">
+                
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                    <h3>Voice Commands</h3>
+                    <p>Control Kadwew with your voice for hands-free operation, making it easier to capture, manage, and interact with your tools while staying fully focused on your game.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>                   
+                    <h3>AI Highlights</h3>
+                    <p>Automatically generate highlights from your gameplay using AI that detects exciting moments, so you never miss a clutch play or a perfect combo again.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-cloud-upload-alt"></i>
+                    </div>                    
+                    <h3>Cloud Storage</h3>
+                    <p>Store and access your clips from anywhere through secure cloud integration, making sure your content is safe, always available, and easy to share or edit.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-shield-alt"></i>
+                    </div>
+                    <h3>Enhanced Security</h3>
+                    <p>Advanced security features to protect your content and user data, including encrypted storage and privacy controls for complete peace of mind.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>                   
+                    <h3>Performance Analytics</h3>
+                    <p>Track your gaming performance with detailed analytics such as kill/death ratios, win streaks, and session stats to help you improve over time.</p>    
+                </div>
+                <div class="feature-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+                    <h3>Live Bookmarking</h3>
+                    <p>Automatically bookmark key moments during live gameplay for faster content creation and easy highlight sharing.</p>    
+                </div>
+            </div>
+        </section>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-items">
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What is Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kadwew is a screen recording and video editing software designed for gamers and content creators. It allows users to capture their gaming sessions, create AI-generated clips, and edit videos effortlessly.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How does the AI clipping feature work?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>The AI clipping feature automatically identifies and captures the best moments from your gaming sessions, making it easy to create highlight reels without manual editing.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Is Kadwew free to use?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kadwew offers a free version with basic features, while advanced features are available through a subscription plan.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Can I use Kadwew with my favorite games?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, Kadwew is compatible with a wide range of games and platforms, including PC, console, and streaming services.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How do I get started with Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>To get started, simply download the Kadwew software from our website, install it, and create an account. Once you're set up, you can start recording and editing your gaming sessions.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What are the system requirements for Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kadwew requires a modern PC with a compatible graphics card and sufficient storage space. For detailed system requirements, please refer to our website.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Can I share my videos directly from Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, Kadwew allows you to share your edited videos directly to popular social media platforms and streaming services.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Is there a mobile version of Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Currently, Kadwew is available only for PC. However, we are exploring options for mobile compatibility in the future.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How can I contact Kadwew support?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>If you have any questions or need assistance, you can reach out to our support team through the contact form on our website.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Are there any tutorials available for using Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, we provide a variety of tutorials and guides on our website to help you get the most out of Kadwew's features.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/Icons/IconKadwew.png" alt="Kadwew logo" class="footer-logo-img">
+          <p class="footer-kad">Kadwew.GG</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="footer-text">
+          <p>&copy; 2025 Kadwew. All rights reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../Kadwew Pro/KadwewPro.js"></script>
+</body>
+</html>
