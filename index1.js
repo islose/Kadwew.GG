@@ -197,44 +197,21 @@ ScrollTrigger.create({
   onLeaveBack: () => logoAnim.pause(),
 });
 
-gsap.from("#app-info1", {
-  opacity: 0,
-  y: 200,
-  duration: 0.6,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: "#app-info1",
-    start: "top 80%",
-    end: "top 10%",
-    once: true,
-  }
+gsap.utils.toArray(".app-info").forEach(el => {
+  gsap.from(el, {
+    opacity: 0,
+    y: 200,
+    duration: 0.6,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%",
+      end: "top 10%",
+      once: true,
+    }
+  });
 });
 
-gsap.from("#app-info2", {
-  opacity: 0,
-  y: 200,
-  duration: 0.6,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: "#app-info2",
-    start: "top 80%",
-    end: "top 10%",
-    once: true,
-  }
-});
-
-gsap.from("#app-info3", {
-  opacity: 0,
-  y: 200,
-  duration: 0.6,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: "#app-info3",
-    start: "top 80%",
-    end: "top 10%",
-    once: true,
-  }
-});
 
 gsap.from(".kad-tech h2", {
   opacity: 0,

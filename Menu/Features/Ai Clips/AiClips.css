@@ -406,7 +406,7 @@ main {
 }
 
 .why-kadwew-content h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: hsl(0, 0%, 100%);
 }
 
@@ -654,6 +654,10 @@ footer {
     }
 
     .second-title h2 {
+        font-size: 3rem;
+    }
+
+    .why-kadwew-content h2 {
         font-size: 3rem;
     }
 

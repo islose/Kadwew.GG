@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./LiveHighlighting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="png" href="/Icons/IconKadwew.png">
+
+    <title>Live Highlighting</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" class="logo">
+                <img src="/Icons/IconKadwew.png" alt="Kadwew logo" class="logo-img">
+                <p class="kad">Kadwew.GG</p>
+            </a>
+
+            <!--------- Menu Icon --------->
+
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fa-solid fa-bars" id="icon-bars"></i>
+              <i class="fa-solid fa-xmark" id="icon-close"></i>
+            </div>
+
+            <!-------- Desktop Menu -------->
+
+            <ul class="nav-links">
+                <li id="abt"><a href="/Menu/About Us/aboutUs.html">About us</a></li>
+                <li id="features">
+                    <a href="#">Features</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Menu/Features/Screen Recording/ScreenRecording.html"><i class="fa-solid fa-video"></i> Screen Recording</a></li>
+                        <li><a href="/Menu/Features/Ai Clips/AiClips.html"><i class="fa-solid fa-film"></i> AI Clips</a></li>
+                        <li><a href="/Menu/Features/Ai Video Editing/AiVideoEditing.html"><i class="fa-solid fa-scissors"></i> AI Video Editing</a></li>
+                        <li><a href="/Menu/Features/Content Managment/ContentManagement.html"><i class="fa-solid fa-list-check"></i> Content Management</a></li>
+                    </ul>
+                </li>
+
+                <li id="useCases">
+                    <a href="#">Use Cases</a>
+                    <ul class="dropdown-menu2">
+                        <li><a href="../Gamer/Gamer.html"><i class="fa-solid fa-gamepad"></i>Gamer</a></li>
+                        <li><a href="../Gaming Creator/GamingCreator.html"><i class="fa-solid fa-square-plus"></i> Gaming Creator</a></li>
+                        <li><a href="../Editor/Editor.html"><i class="fa-solid fa-pen-to-square"></i> Editor</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="../Live Highlighting/LiveHighlighting.html">Live Highlighting</a></li>
+                <li><a href="/Menu/Kadwew Pro/KadwewPro.html">Kadwew Pro</a></li>
+            </ul>
+
+            <!------- Mobile Menu ------->
+
+             <div class="mobile-menu" id="mobile-menu">
+              
+              <h2><a href="/Menu/About Us/aboutUs.html">About us</a></h2>
+
+              <h3>Features :</h3>
+              <ul>
+                <li><a href="/Menu/Features/Screen Recording/ScreenRecording.html">Screen Recording</a></li>
+                <li><a href="/Menu/Features/Ai Clips/AiClips.html">AI Clips</a></li>
+                <li><a href="/Menu/Features/Ai Video Editing/AiVideoEditing.html">AI Video Editing</a></li>
+                <li><a href="/Menu/Features/Content Managment/ContentManagement.html">Content Management</a></li>
+              </ul>
+              <h3>Use Cases :</h3>
+
+              <ul>
+                <li><a href="../Gamer/Gamer.html">Gamer</a></li>
+                <li><a href="../Gaming Creator/GamingCreator.html">Gaming Creator</a></li>
+                <li><a href="../Editor/Editor.html">Editor</a></li>
+                <li><a href="../Live Highlighting/LiveHighlighting.html">Live Highlighting</a></li>
+              </ul>
+
+              <h2><a href="/Menu/Kadwew Pro/KadwewPro.html">Kadwew Pro</a></h2>
+             </div>
+
+             <button id="downBtn">Download for PC</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="amd-hero">
+            <div class="amd-banner">
+                <img src="./assets/amd-hero-banner.9e50e0c1.png" alt="AMD Ryzen 9">
+                <div class="amd-description">
+                    <h1><span class="titleColor">Live Highlighting:</span> <br> Empowering <br> Gamers <br> and Creators</h1>
+                    <p>Take your content creation to the next level with Kadwew Pro, optimized for the next-generation AMD XDNA™ NPUs. By leveraging cutting-edge hardware—including AMD Radeon™ graphics, AMD RDNA™ architecture, and advanced AI-driven NPUs—Powder delivers seamless highlight capture and real-time automontages, all without impacting your gameplay.</p>
+                    <button class="Obtn">Explore Offers</button>
+                </div>           
+            </div>
+        </section>
+
+         <div class="second-title">
+            <h2>The Future of Gaming Creation:
+                Highlights Powered by AMD</h2>
+            <p>Imagine creating and sharing your best gaming moments instantly—without ever interrupting the action.
+                AMD XDNA™ NPUs make this possible by transforming long processing times into real-time creativity.</p>
+        </div>
+
+        <div class="ytVid" id="ytVid">
+            <iframe
+                src="https://www.youtube.com/embed/ohLzy9LP_yU?autoplay=1&mute=1&controls=0&loop=1&playlist=ohLzy9LP_yU&modestbranding=1&rel=0&disablekb=1"
+                title="YouTube video"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                style="pointer-events: none;">
+            </iframe>
+            <div class="ytOverlay"></div>
+        </div>
+
+        <div class="amd-npu-benchmark">
+            <img src="./assets/amd-npu-benchmark.fdb5b83b.png" alt="amd-npu-benchmark">
+        </div>
+
+        <div class="third-title">
+            <h2>Optimized Performance, Seamless Integration</h2>
+            <p>Kadwew's AI tools are finely tuned to work in harmony with groundbreaking technology by AMD, offering:</p>
+        </div>
+
+
+        <section id="app-info1" class="app-info reverse">
+            <div class="container">
+              <div class="row">
+                <div class="img-info">
+                  <img src="./assets/capture.fb6d7558.png" alt="info image 1">
+                </div>
+                <div class="description">
+                  <h2>Smooth Gameplay Capture</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="app-info2" class="app-info reverse">
+            <div class="container">
+              <div class="row">
+                <div class="img-info">
+                  <img src="./assets/creation.9ccea0ae.png" alt="info image 2">
+                </div>
+                <div class="description">
+                  <h2>Effortless Content Creation</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="app-info3" class="app-info reverse">
+            <div class="container">
+              <div class="row">
+                <div class="img-info">
+                  <img src="./assets/performance.055d60cc.png" alt="info image 3">
+                </div>
+                <div class="description">
+                  <h2>Uncompromising Gaming Performance</h2>     
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="fourth-title">
+            <p>With AMD and Kadwew, you'll experience superior speed, efficiency, and visual quality—all designed to maximize your creativity without slowing down your gaming.</p>
+          </div>
+
+          <div class="experience">
+            <h2>Experience the Difference</h2>
+            <p>With AMD Ryzen™ AI 9 processors, AMD Radeon™ RX GPUs, and AMD XDNA™ NPUs, your gaming setup becomes a hub for innovation.</p>
+            <div class="exp-img">
+                <img src="./assets/performance.199419d6.png" alt="Performance image">
+                <img src="./assets/creativity.b64f4f27.png" alt="Creativity image">
+                <img src="./assets/fun.3ff6cd68.png" alt="Fun image">
+            </div>
+          </div>
+
+          <div class="exp-btn">
+              <p>All powered by the next-generation partnership between AMD and Kadwew.</p>
+              <button class="disBtn">Discover the products</button>
+          </div>
+
+          <div class="amd-logo">
+        <!-- Logo AMD complet en SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" fill="white">
+          <path d="m 103.7 83.32 l 5.4 -14.31 l 5.94 14.31 H 103.7 Z m 10.58 -23.11 h -10.64 L 88.79 97.03 h 9.72 l 2.75 -7.29 h 16.47 l 3.02 7.29 h 9.88 l -16.36 -36.82 Z M 165.34 74.03 v 23 h 9.18 V 60.21 h -7.99 l -11.82 13.66 l -11.82 -13.66 h -8 v 36.82 h 9.18 v -23 l 9.94 11.56 h 1.4 l 9.93 -11.56 Z M 196.7 90.29 h -5.99 V 66.97 h 5.89 c 8.69 0 12.09 5.34 12.09 11.66 c 0 5.4 -2.76 11.66 -11.99 11.66 m 1.08 -30.08 h -16.25 v 36.82 h 15.23 c 14.68 0 21.38 -7.78 21.38 -18.36 s -6.91 -18.46 -20.35 -18.46 M 236.4 68.94 h 18.98 v 18.99 l 11.58 11.57 V 57.37 h -42.14 l 11.58 11.57 Z M 253.06 87.94 h -16.68 V 71.26 l -11.91 11.92 v 16.68 h 16.67 l 11.92 -11.92 Z M 100.7 139.19 c -0.98 0.42 -2.87 0.72 -4.05 0.72 c -3.37 0 -5.07 -1.59 -5.07 -4.88 v -10.25 h -2.76 v -3.67 h 2.76 v -4.58 l 4.61 -0.64 v 5.22 h 4.73 l -0.3 3.67 h -4.43 v 9.65 c 0 0.98 0.45 1.63 1.66 1.63 c 0.68 0 1.51 -0.15 2.31 -0.38 l 0.53 3.52 Z M 110.19 139.91 c -6.32 0 -8.02 -3.48 -8.02 -7.26 V 128 c 0 -3.78 1.7 -7.26 8.02 -7.26 s 8.02 3.48 8.02 7.26 v 4.65 c 0 3.78 -1.7 7.26 -8.02 7.26 Z m 0 -15.25 c -2.46 0 -3.4 1.1 -3.4 3.18 v 4.96 c 0 2.08 0.95 3.18 3.4 3.18 s 3.4 -1.1 3.4 -3.18 v -4.96 c 0 -2.08 -0.95 -3.18 -3.4 -3.18 Z M 126.57 134.57 c -0.6 0.38 -1.1 0.91 -1.1 1.48 c 0 0.49 0.3 0.72 1.02 0.79 c 2.04 0.23 3.18 0.34 5.33 0.57 c 2.99 0.34 3.93 1.82 3.93 4.46 c 0 3.93 -1.44 5.48 -8.32 5.48 c -2.12 0 -5.03 -0.3 -7.11 -0.95 l 0.57 -3.44 c 1.97 0.49 4.05 0.79 6.2 0.79 c 3.67 0 4.39 -0.27 4.39 -1.48 c 0 -1.13 -0.34 -1.32 -1.74 -1.48 c -2.12 -0.23 -2.99 -0.34 -5.33 -0.61 c -2.61 -0.3 -3.63 -1.17 -3.63 -3.52 c 0 -1.51 1.02 -2.5 1.93 -3.14 c -1.7 -1.02 -2.5 -2.72 -2.5 -4.96 v -1.74 c 0.08 -3.82 2.08 -6.13 7.41 -6.13 c 1.25 0 2.23 0.15 3.14 0.38 h 5.67 v 2.31 c -0.64 0.19 -1.4 0.38 -2.04 0.57 c 0.42 0.79 0.64 1.82 0.64 2.88 v 1.74 c 0 3.74 -2.27 6.01 -7.41 6.01 c -0.38 0 -0.72 0 -1.06 -0.04 Z m 1.06 -10.14 c -2.27 0 -3.06 0.83 -3.06 2.57 v 1.4 c 0 1.82 0.91 2.5 3.06 2.5 s 3.1 -0.72 3.1 -2.5 V 127 c 0 -1.74 -0.79 -2.57 -3.1 -2.57 Z M 145.91 136.12 c 1.78 0 3.63 -0.26 5.64 -0.87 l 0.72 3.48 c -2.08 0.79 -4.58 1.17 -6.77 1.17 c -5.79 0 -7.79 -2.69 -7.79 -7.11 v -4.88 c 0 -3.9 1.74 -7.19 7.64 -7.19 s 7.23 3.44 7.23 7.41 v 3.93 h -10.25 v 0.95 c 0 2.23 0.79 3.1 3.59 3.1 Z m -3.6 -7.75 h 5.86 v -0.91 c 0 -1.74 -0.53 -2.95 -2.8 -2.95 s -3.06 1.21 -3.06 2.95 v 0.91 Z M 165.2 139.19 c -0.98 0.42 -2.87 0.72 -4.05 0.72 c -3.37 0 -5.07 -1.59 -5.07 -4.88 v -10.25 h -2.76 v -3.67 h 2.76 v -4.58 l 4.61 -0.64 v 5.22 h 4.73 l -0.3 3.67 h -4.43 v 9.65 c 0 0.98 0.45 1.63 1.66 1.63 c 0.68 0 1.51 -0.15 2.31 -0.38 l 0.53 3.52 Z M 178.4 139.53 v -12.86 c 0 -0.98 -0.42 -1.48 -1.48 -1.48 c -1.14 0 -3.14 0.68 -4.8 1.55 v 12.79 h -4.61 v -25.95 l 4.61 -0.64 v 9.57 c 2.04 -1.06 4.77 -1.78 6.73 -1.78 c 3.06 0 4.16 2.16 4.16 5.45 v 13.35 h -4.61 Z M 194.18 136.12 c 1.78 0 3.63 -0.26 5.64 -0.87 l 0.72 3.48 c -2.08 0.79 -4.58 1.17 -6.77 1.17 c -5.79 0 -7.79 -2.69 -7.79 -7.11 v -4.88 c 0 -3.9 1.74 -7.19 7.64 -7.19 s 7.23 3.44 7.23 7.41 v 3.93 H 190.6 v 0.95 c 0 2.23 0.79 3.1 3.59 3.1 Z m -3.6 -7.75 h 5.86 v -0.91 c 0 -1.74 -0.53 -2.95 -2.8 -2.95 s -3.06 1.21 -3.06 2.95 v 0.91 Z M 213.17 124.96 c -1.78 0.79 -3.21 1.63 -4.88 2.69 v 11.88 h -4.61 v -18.42 h 3.9 l 0.3 2.04 c 1.02 -0.68 3.22 -1.97 4.84 -2.42 l 0.45 4.24 Z M 223.19 139.53 l -3.4 -18.42 h 4.31 l 2.27 12.33 l 3.67 -12.33 h 4.8 l 3.63 12.33 l 2.27 -12.33 h 4.31 l -3.4 18.42 h -5.33 l -3.9 -13.24 l -3.9 13.24 h -5.33 Z M 254.44 136.12 c 1.78 0 3.63 -0.26 5.64 -0.87 l 0.72 3.48 c -2.08 0.79 -4.58 1.17 -6.77 1.17 c -5.79 0 -7.79 -2.69 -7.79 -7.11 v -4.88 c 0 -3.9 1.74 -7.19 7.64 -7.19 s 7.23 3.44 7.23 7.41 v 3.93 h -10.25 v 0.95 c 0 2.23 0.79 3.1 3.59 3.1 Z m -3.6 -7.75 h 5.86 v -0.91 c 0 -1.74 -0.53 -2.95 -2.8 -2.95 s -3.06 1.21 -3.06 2.95 v 0.91 Z M 283.64 139.53 h -3.78 l -0.34 -1.25 c -1.66 1.1 -3.63 1.63 -5.48 1.63 c -3.37 0 -4.8 -2.31 -4.8 -5.48 c 0 -3.75 1.63 -5.18 5.37 -5.18 h 4.43 v -1.93 c 0 -2.04 -0.57 -2.76 -3.52 -2.76 c -1.66 0 -3.48 0.23 -5.11 0.57 l -0.57 -3.52 c 1.74 -0.53 4.27 -0.87 6.32 -0.87 c 5.79 0 7.49 2.04 7.49 6.66 v 12.14 Z m -4.61 -6.96 h -3.4 c -1.51 0 -1.93 0.42 -1.93 1.82 c 0 1.29 0.42 1.85 1.85 1.85 c 1.36 0 2.61 -0.45 3.48 -0.95 v -2.72 Z M 286.48 127.23 c 0 -4.09 1.82 -6.51 6.09 -6.51 c 1.63 0 3.48 0.23 4.92 0.53 v -7.68 l 4.62 -0.64 v 26.59 h -3.67 l -0.45 -1.55 c -1.63 1.17 -3.52 1.93 -5.83 1.93 c -3.71 0 -5.67 -2.19 -5.67 -6.39 v -6.28 Z m 11.01 -2.08 c -1.21 -0.26 -2.76 -0.49 -4.08 -0.49 c -1.66 0 -2.31 0.79 -2.31 2.46 v 6.51 c 0 1.51 0.57 2.35 2.27 2.35 c 1.51 0 3.14 -0.76 4.12 -1.66 v -9.15 Z M 315.61 139.53 h -6.09 l -5.9 -18.42 h 4.73 l 4.2 14 l 4.24 -14 h 4.73 l -5.9 18.42 Z M 336.49 139.53 h -3.78 l -0.34 -1.25 c -1.66 1.1 -3.63 1.63 -5.48 1.63 c -3.37 0 -4.8 -2.31 -4.8 -5.48 c 0 -3.75 1.63 -5.18 5.37 -5.18 h 4.43 v -1.93 c 0 -2.04 -0.57 -2.76 -3.52 -2.76 c -1.67 0 -3.48 0.23 -5.11 0.57 l -0.57 -3.52 c 1.74 -0.53 4.27 -0.87 6.32 -0.87 c 5.79 0 7.49 2.04 7.49 6.66 v 12.14 Z m -4.61 -6.96 h -3.4 c -1.51 0 -1.93 0.42 -1.93 1.82 c 0 1.29 0.42 1.85 1.85 1.85 c 1.36 0 2.61 -0.45 3.48 -0.95 v -2.72 Z M 350.98 139.53 v -12.86 c 0 -0.98 -0.42 -1.48 -1.48 -1.48 c -1.13 0 -3.14 0.68 -4.8 1.55 v 12.79 h -4.62 v -18.42 h 3.52 l 0.45 1.55 c 2.31 -1.13 5.22 -1.93 7.38 -1.93 c 3.06 0 4.16 2.16 4.16 5.45 v 13.35 h -4.62 Z M 358.55 132.83 v -5.03 c 0 -4.96 2.16 -7.07 7.94 -7.07 c 1.29 0 3.14 0.23 4.5 0.68 l -0.57 3.78 c -1.25 -0.34 -2.91 -0.49 -3.82 -0.49 c -2.65 0 -3.44 0.79 -3.44 3.06 v 5.11 c 0 2.27 0.79 3.06 3.44 3.06 c 1.17 0 2.5 -0.15 3.82 -0.49 l 0.57 3.78 c -1.21 0.42 -2.99 0.68 -4.5 0.68 c -5.79 0 -7.94 -2.12 -7.94 -7.07 Z M 380.98 136.12 c 1.78 0 3.63 -0.26 5.64 -0.87 l 0.72 3.48 c -2.08 0.79 -4.58 1.17 -6.77 1.17 c -5.79 0 -7.79 -2.69 -7.79 -7.11 v -4.88 c 0 -3.9 1.74 -7.19 7.64 -7.19 s 7.22 3.44 7.22 7.41 v 3.93 h -10.25 v 0.95 c 0 2.23 0.79 3.1 3.59 3.1 Z m -3.6 -7.75 h 5.86 v -0.91 c 0 -1.74 -0.53 -2.95 -2.8 -2.95 s -3.06 1.21 -3.06 2.95 v 0.91 Z M 389.32 139.53 h 15.7 v 2.82 h -15.7 Z" />
+        </svg>
+      </div>
+
+      <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-items">
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What is Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kadwew is a screen recording and video editing software designed for gamers and content creators. It allows users to capture their gaming sessions, create AI-generated clips, and edit videos effortlessly.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How does the AI clipping feature work?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>The AI clipping feature automatically identifies and captures the best moments from your gaming sessions, making it easy to create highlight reels without manual editing.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Is Kadwew free to use?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kadwew offers a free version with basic features, while advanced features are available through a subscription plan.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Can I use Kadwew with my favorite games?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, Kadwew is compatible with a wide range of games and platforms, including PC, console, and streaming services.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How do I get started with Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>To get started, simply download the Kadwew software from our website, install it, and create an account. Once you're set up, you can start recording and editing your gaming sessions.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What are the system requirements for Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Kadwew requires a modern PC with a compatible graphics card and sufficient storage space. For detailed system requirements, please refer to our website.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Can I share my videos directly from Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, Kadwew allows you to share your edited videos directly to popular social media platforms and streaming services.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Is there a mobile version of Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Currently, Kadwew is available only for PC. However, we are exploring options for mobile compatibility in the future.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How can I contact Kadwew support?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>If you have any questions or need assistance, you can reach out to our support team through the contact form on our website.</p>
+                </div>
+              </div>
+          
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Are there any tutorials available for using Kadwew?</h3>
+                  <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, we provide a variety of tutorials and guides on our website to help you get the most out of Kadwew's features.</p>
+                </div>
+              </div>
+          
+            </div>
+          </div> 
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/Icons/IconKadwew.png" alt="Kadwew logo" class="footer-logo-img">
+          <p class="footer-kad">Kadwew.GG</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div class="footer-text">
+          <p>&copy; 2025 Kadwew. All rights reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./LiveHighlighting.js"></script>
+</body>
+</html>
