@@ -423,3 +423,43 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+if (!isMobile) {
+  gsap.from(".logo-partner", {
+    opacity: 0,
+    y: 50,
+    duration: 0.6,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".partner",
+      start: "top 50%",
+      end: "top 10%",
+      once: true,
+    }
+  });
+
+  // Animation de logos qui tournent
+  let images = document.querySelectorAll(".logo-partner img");
+  let index = 0;
+
+  gsap.set(images[0], { opacity: 1 });
+
+  const logoAnim = gsap.timeline({ paused: true, repeat: -1 });
+
+  for (let i = 0; i < images.length; i++) {
+    logoAnim.to(images[i], { opacity: 0, duration: 1.5 });
+    let next = (i + 1) % images.length;
+    logoAnim.to(images[next], { opacity: 1, duration: 2 });
+  }
+
+  logoAnim.play();
+
+  ScrollTrigger.create({
+    trigger: ".logo-partner",
+    start: "top bottom",
+    end: "bottom top",
+    onEnter: () => logoAnim.resume(),
+    onLeave: () => logoAnim.pause(),
+    onEnterBack: () => logoAnim.resume(),
+    onLeaveBack: () => logoAnim.pause(),
+  });
+}
