@@ -1,0 +1,81 @@
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #111;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #f83737;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff5656;
+    }
+
+    /* SÉLECTION TEXTE */
+    ::selection {
+      background: #f83737;
+      color: rgb(0, 0, 0);
+    }
+
+    /* PLACEHOLDER */
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+      font-style: italic;
+    }
+
+    /* CURSEUR */
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: sans-serif;
+      margin: 30px;
+      cursor: default;
+    }
+    a:hover, button:hover {
+      cursor: pointer;
+    }
+
+    /* PROGRESS BAR */
+    .progress-container {
+        width: 780px;
+        height: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background-color: #ff0000;
+        transition: width 0.4s ease;
+    }
+
+
+    /* CHECKBOX */
+    input[type="checkbox"] {
+      accent-color: #ffffff;
+    }
+
+    /* AUTRES STYLES */
+    input, textarea, button {
+      padding: 10px;
+      margin-top: 10px;
+      background: #1a1a1a;
+      border: 1px solid #444;
+      color: white;
+      border-radius: 5px;
+    }
+    
+    button {
+      background-color: #f83737;
+      border: none;
+    }
+
+    section {
+      max-width: 600px;
+      margin-bottom: 50px;
+    }

@@ -160,7 +160,10 @@ body {
 .mobile-menu {
     display: flex;
     position: fixed;
-    height: 55vh;
+    width: 100%;
+    max-height: 65vh;
+    height: auto;
+    overflow-y: auto;
     top: 0;
     left: 0;
     right: 0;
@@ -171,7 +174,7 @@ body {
     justify-content: center;
     align-items: start;
     border-radius: 5px;
-    padding: 20px;
+    padding: 5vw;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     visibility: hidden;
     opacity: 0;
@@ -669,6 +672,12 @@ body {
     width: 90%;
 }
 
+.guide-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
 .guide-box1, .guide-box2, .guide-box3, .guide-box4 {
     height: 250px;
     width: 250px;
@@ -975,7 +984,9 @@ footer {
         aspect-ratio: 16/9;
     }
 
-    
+    .ytVid {
+        display: none;
+    }
 
     .kad-tech h2 {
         font-size: 2.5rem;

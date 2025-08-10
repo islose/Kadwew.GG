@@ -82,7 +82,7 @@ main {
     transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
-#kdp a {
+ #kdp a {
     color: hsl(221, 73%, 57%);
 }
 
@@ -171,7 +171,7 @@ main {
 .mobile-menu {
     display: flex;
     position: fixed;
-    height: 55vh;
+    height: 65vh;
     top: 0;
     left: 0;
     right: 0;

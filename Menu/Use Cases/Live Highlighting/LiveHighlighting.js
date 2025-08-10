@@ -103,11 +103,11 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 
 let tl = gsap.timeline();
 
-tl.from(".amd-description h1", { opacity: 0, x: -100, duration: 0.3})
-  .from(".amd-description p", { opacity: 0, x: -100, duration: 0.3,})
+tl.from(".amd-description h1", { opacity: 0, x: -100, duration: 0.4})
+  .from(".amd-description p", { opacity: 0, x: -100, duration: 0.4,})
 
-  .from(".amd-description button", {opacity: 0, x: -100, duration: 0.3})
-  .from(".amd-banner img", { opacity: 0, x: -100, duration: 0.3});
+  .from(".amd-description button", {opacity: 0, x: -100, duration: 0.4})
+  .from(".amd-banner img", { opacity: 0, x: -100, duration: 0.4});
 
 
 gsap.from(".second-title h2", {

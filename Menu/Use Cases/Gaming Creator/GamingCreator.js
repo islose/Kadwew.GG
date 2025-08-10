@@ -85,23 +85,34 @@ let tl = gsap.timeline();
 
 tl.from(".feedBacks", { opacity: 0, y: 100, duration: 0.8 }, "0")
 
-  .from(".hero-content h1", { opacity: 0, x: -100, duration: 0.3 }, "0.1")
-  .from(".hero-content p", { opacity: 0, x: -100, duration: 0.3 }, "0.3")
-  .from(".hero-content button", { opacity: 0, x: -100, duration: 0.3 }, "0.6")
-  .from(".hero-images", { opacity: 0, x: -100, duration: 0.3 }, "0.9");
+  .from(".hero-content h1", { opacity: 0, x: -100, duration: 0.4 }, "0.3")
+  .from(".hero-content p", { opacity: 0, x: -100, duration: 0.4 }, "0.6")
+  .from(".hero-content button", { opacity: 0, x: -100, duration: 0.4 }, "0.9")
+  .from(".hero-images", { opacity: 0, x: -100, duration: 0.4 }, "1");
 
-gsap.from(".second-title", {
+gsap.from(".second-title h2", {
   opacity: 0,
   y: 100,
   duration: 0.6,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: "#app-info1",
+    trigger: ".second-title h2",
     start: "top 90%",
     once: true,
   }
 });
 
+gsap.from(".second-title p", {
+  opacity: 0,
+  y: 100,
+  duration: 0.6,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".second-title p",
+    start: "top 90%",
+    once: true,
+  }
+});
 
 gsap.from("#app-info1", {
   opacity: 0,
